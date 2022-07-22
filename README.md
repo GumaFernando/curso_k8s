@@ -81,19 +81,29 @@ Nesta etapa conseguimos identificar os objetos existentes (PODS,DEPLOY,SERVICES,
  - Minikube
  - Kubectl
  
+***---------------------------------------------------------*** 
 
 - Faça o download dos scripts do path: curso_k8s/secao_7/
 - Abra o Minikube via CMD e start o cluster
-  command: minikube start --driver=docker
+  - command: minikube start --driver=docker
   
 - Execute o script dentro do path: curso_k8s/secao_7/namespaces/
-  command : kubectl apply -f votes.yaml --record
+  - command : kubectl apply -f votes.yaml --record
   
 - Execute o script dentro do path: curso_k8s/secao_7/deploy/
-  command : kubectl apply -f . --record 
+  - command : kubectl apply -f . --record 
   
 - Execute o script dentro do path: curso_k8s/secao_7/services/
-  command : kubectl apply -f . --record 
+  - command : kubectl apply -f . --record 
+  
+- Para abrir a aplicação de votos via web
+  - command: minikube service vote -n vote
+  
+- Para abrir a aplicação de resultados via web
+  - command: minikube service result -n vote
+  
+ - ***PARA DELETAR O CLUSTER***
+  - command: minikube delete
   
   
  ### Consultar no namespace -> vote os objetos criados e status
