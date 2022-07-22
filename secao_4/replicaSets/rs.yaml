@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: frontend-rs
+  labels:
+    app: frontend
+spec:
+  template: ##template do pod
+    metadata:
+      name: nginx-pod   #nome do pod que estamso replicando
+      labels:
+        env: production
+    spec:
+      containers:
+        - name: nginx-cont  ## nome do container que vc quer replicar, neste caso o que ja existia no pod.yaml
+          image: nginx
+  selector:
+    matchLabels:
+      env: production     ## referente a linha 12
+  replicas: 2
+      

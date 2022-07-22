@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: frontend-svc    # nome serviço
+spec:
+  selector:
+    type: frontend      # frontend - referente o TYPE do POD no file deploy "frontend-dp.yaml" linha 17
+  ports:
+    - name: http
+      port: 80          # porta serviço container
+      nodePort: 30080   # porta para acesso externo
+  type: NodePort        # tipo de serviço

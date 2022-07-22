@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod           #tipo
+metadata:
+  name: nginx-pod       #nome desejado [pode alterar]
+  labels:
+    app: nginx      #nome desejado [pode alterar]
+    tier: frontend
+spec:
+  containers:
+  - name: nginx-cont     # nome container desejado
+    image: nginx    #imagem utilizada

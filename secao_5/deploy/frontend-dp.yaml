@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend-dp
+  labels:
+    app: frontend-app
+    type: frontend
+spec:
+  selector:
+    matchLabels:
+      type: frontend        ## usando frontend para dar match com a linha 17 ref o pod
+  template:
+    metadata:
+      name: frontend-pod    ### nome do pod
+      labels:
+        app: frontend-app
+        type: frontend
+    spec:
+      containers:
+      - name: nginx-cont    # nome container 
+        image: nginx        # nome imagem a  utilizar
+  replicas: 6
+  
