@@ -3,7 +3,8 @@
 ##  Sobre o Projeto 
 
 Projeto realizado conforme proposto no curso da Udemy :  ***Orquestração de Containers com Kubernetes***
-link do curso -  https://www.udemy.com/course/orquestracao-de-containers-com-kubernetes/
+
+- link do curso -  https://www.udemy.com/course/orquestracao-de-containers-com-kubernetes/
 
 ### Resumo Aplicação
 
