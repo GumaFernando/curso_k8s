@@ -11,3 +11,20 @@ Utilizando a ferramenta de orquestração Kubernetes, foram criadas de forma dec
 - Minikube 
 - Docker Hub
 - VsCode
+
+## Desenvolvimento
+
+#### Start no cluster
+
+#### Verificando os namespaces existentes
+  Obs: Não temos o namespace ***vote*** criado !
+  
+#### Criando o namespace -> Vote
+
+#### Criando os deployments 
+
+
+#### Criando os serviços
+
+
+#### Verificando os objetos existentes dentro do namespace -> VOTE
